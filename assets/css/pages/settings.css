@@ -1,0 +1,59 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* GRID */
+.settings-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* CARD */
+.settings-card {
+    background: var(--card);
+    padding: 1.5rem;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+/* SETTINGS ITEM */
+.setting-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0.5rem 0;
+}
+
+/* DANGER CARD */
+.settings-card.danger {
+    border: 1px solid red;
+}
+
+/* ===== TABLET ===== */
+@media (min-width: 768px) {
+
+    .settings-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* ===== DESKTOP ===== */
+@media (min-width: 1024px) {
+
+    .settings-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .settings-card.danger {
+        grid-column: span 3;
+    }
+}

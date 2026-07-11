@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Projects | ProjectHub</title>
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+
+    <div class="navbar__left">
+        <div class="navbar__logo">ProjectHub</div>
+    </div>
+
+    <nav class="navbar__center">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="projects.html">Projects</a>
+        <a href="tasks.html">Tasks</a>
+        <a href="team.html">Team</a>
+    </nav>
+
+    <div class="navbar__right">
+        <button class="btn btn-primary">New Project</button>
+    </div>
+
+</header>
+
+<div class="app-layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="sidebar__logo">ProjectHub</div>
+
+        <a class="sidebar__link" href="dashboard.html">Dashboard</a>
+        <a class="sidebar__link sidebar__link--active" href="projects.html">Projects</a>
+        <a class="sidebar__link" href="tasks.html">Tasks</a>
+        <a class="sidebar__link" href="team.html">Team</a>
+        <a class="sidebar__link" href="settings.html">Settings</a>
+
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main-content">
+
+        <section class="page">
+
+            <!-- PAGE HEADER -->
+            <section class="page-header">
+
+                <div>
+                    <h1 class="page-header__title">Projects</h1>
+                    <p class="page-header__subtitle">
+                        Manage and track all your projects.
+                    </p>
+                </div>
+
+                <div class="page-header__actions">
+                    <button class="btn btn-primary">Create Project</button>
+                </div>
+
+            </section>
+
+            <!-- FILTER BAR -->
+            <section class="filter-bar">
+
+                <input class="input" type="search" placeholder="Search projects...">
+
+                <div class="filter-controls">
+
+                    <select class="dropdown__select">
+                        <option>All Status</option>
+                        <option>Active</option>
+                        <option>Completed</option>
+                        <option>On Hold</option>
+                    </select>
+
+                    <select class="dropdown__select">
+                        <option>Sort By</option>
+                        <option>Newest</option>
+                        <option>Oldest</option>
+                    </select>
+
+                    <button class="btn btn-outline">Filter</button>
+
+                </div>
+
+            </section>
+
+            <!-- PROJECT GRID -->
+            <section class="projects-grid">
+
+                <article class="project-card">
+                    <h3 class="project-card__title">ProjectHub</h3>
+                    <p class="project-card__description">MERN Dashboard System</p>
+                </article>
+
+                <article class="project-card">
+                    <h3 class="project-card__title">E-Commerce Platform</h3>
+                    <p class="project-card__description">Full stack shopping system</p>
+                </article>
+
+                <article class="project-card">
+                    <h3 class="project-card__title">Finance Tracker</h3>
+                    <p class="project-card__description">Budget management tool</p>
+                </article>
+
+                <article class="project-card">
+                    <h3 class="project-card__title">Hospital System</h3>
+                    <p class="project-card__description">Patient management platform</p>
+                </article>
+
+            </section>
+
+            <!-- PAGINATION -->
+            <section class="pagination">
+
+                <button class="btn btn-outline">Prev</button>
+
+                <button class="btn btn-primary">1</button>
+                <button class="btn btn-outline">2</button>
+                <button class="btn btn-outline">3</button>
+
+                <button class="btn btn-outline">Next</button>
+
+            </section>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+
+</html>

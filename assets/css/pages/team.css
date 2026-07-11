@@ -1,0 +1,72 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* TEAM STATS */
+.team-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* FILTER BAR */
+.filter-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.filter-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* MEMBER CELL */
+.member {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+/* TABLE */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+/* ===== TABLET ===== */
+@media (min-width: 768px) {
+
+    .team-stats {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .team-stats .stat-card {
+        flex: 1;
+    }
+
+    .filter-bar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .filter-controls {
+        flex-direction: row;
+    }
+}
+
+/* ===== DESKTOP ===== */
+@media (min-width: 1024px) {
+
+    .team-stats .stat-card {
+        flex: 1;
+    }
+
+    .table-wrapper {
+        overflow-x: visible;
+    }
+}

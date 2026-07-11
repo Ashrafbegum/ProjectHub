@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | ProjectHub</title>
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+
+    <div class="navbar__left">
+        <div class="navbar__logo">ProjectHub</div>
+    </div>
+
+    <nav class="navbar__center">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="projects.html">Projects</a>
+        <a href="tasks.html">Tasks</a>
+        <a href="team.html">Team</a>
+    </nav>
+
+    <div class="navbar__right">
+        <button class="btn btn-primary">New</button>
+    </div>
+
+</header>
+
+<div class="app-layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="sidebar__logo">ProjectHub</div>
+
+        <a class="sidebar__link sidebar__link--active" href="dashboard.html">Dashboard</a>
+        <a class="sidebar__link" href="projects.html">Projects</a>
+        <a class="sidebar__link" href="tasks.html">Tasks</a>
+        <a class="sidebar__link" href="team.html">Team</a>
+        <a class="sidebar__link" href="settings.html">Settings</a>
+
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main-content">
+
+        <section class="page">
+
+            <!-- PAGE HEADER -->
+            <section class="page-header">
+
+                <div>
+                    <h1 class="page-header__title">Dashboard</h1>
+                    <p class="page-header__subtitle">
+                        Welcome back! Here’s what’s happening today.
+                    </p>
+                </div>
+
+                <div class="page-header__actions">
+                    <button class="btn btn-primary">New Project</button>
+                </div>
+
+            </section>
+
+            <!-- STATS -->
+            <section class="stats">
+
+                <div class="stat-card">
+                    <div class="stat-card__title">Total Projects</div>
+                    <div class="stat-card__value">24</div>
+                    <div class="stat-card__info">+12% this month</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-card__title">Active Tasks</div>
+                    <div class="stat-card__value">58</div>
+                    <div class="stat-card__info">+5% this week</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-card__title">Completed</div>
+                    <div class="stat-card__value">16</div>
+                    <div class="stat-card__info">Stable</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-card__title">Team Members</div>
+                    <div class="stat-card__value">8</div>
+                    <div class="stat-card__info">+2 new</div>
+                </div>
+
+            </section>
+
+            <!-- CHARTS -->
+            <section class="charts">
+
+                <div class="chart-card">
+                    <h3>Project Progress</h3>
+                    <div class="chart-card__body">Chart Area</div>
+                </div>
+
+                <div class="chart-card">
+                    <h3>Task Distribution</h3>
+                    <div class="chart-card__body">Chart Area</div>
+                </div>
+
+            </section>
+
+            <!-- PROJECTS -->
+            <section class="projects">
+
+                <div class="project-card">
+                    <h3 class="project-card__title">ProjectHub</h3>
+                    <p class="project-card__description">MERN Dashboard App</p>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="project-card__title">E-Commerce Platform</h3>
+                    <p class="project-card__description">Full stack system</p>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="project-card__title">Finance Tracker</h3>
+                    <p class="project-card__description">Personal budgeting tool</p>
+                </div>
+
+            </section>
+
+            <!-- TASK TABLE -->
+            <section class="table-wrapper">
+
+                <table class="table">
+
+                    <thead>
+                        <tr>
+                            <th>Task</th>
+                            <th>Status</th>
+                            <th>Owner</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>Build Navbar</td>
+                            <td>In Progress</td>
+                            <td>Alex Johnson</td>
+                        </tr>
+
+                        <tr>
+                            <td>Design Dashboard</td>
+                            <td>Completed</td>
+                            <td>Sarah Chen</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </section>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+
+</html>

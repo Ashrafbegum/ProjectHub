@@ -1,0 +1,39 @@
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:.5rem;
+
+    width:100%;
+}
+
+.form-group label{
+
+    font-size:.9rem;
+
+    font-weight:500;
+}
+
+.input{
+
+    width:100%;
+
+    padding:.8rem 1rem;
+
+    border:1px solid #d1d5db;
+
+    border-radius:var(--radius-md);
+
+    outline:none;
+
+    font-size:.95rem;
+
+    transition:border-color .2s ease;
+}
+
+.input:focus{
+
+    border-color:var(--primary);
+}

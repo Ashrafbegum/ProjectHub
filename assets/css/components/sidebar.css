@@ -1,0 +1,57 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -260px;
+
+    width: 260px;
+    height: 100vh;
+
+    background: var(--card);
+    box-shadow: var(--shadow-md);
+
+    padding: 1rem;
+
+    transition: 0.3s ease;
+}
+
+.sidebar--open {
+    left: 0;
+}
+
+ .sidebar__logo {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--primary);
+
+    margin-bottom: 2rem;
+} 
+
+.sidebar__link {
+    display: block;
+    padding: 0.8rem 1rem;
+
+    color: var(--text);
+
+    border-radius: var(--radius-md);
+
+    margin-bottom: 0.4rem;
+
+    transition: 0.2s;
+}
+
+.sidebar__link:hover {
+    background: #f3f4f6;
+}
+
+.sidebar__link--active {
+    background: var(--primary);
+    color: white;
+}
+
+/* Tablet & Desktop always visible */
+@media (min-width: 768px) {
+
+    .sidebar {
+        left: 0;
+    }
+}

@@ -1,0 +1,57 @@
+.project-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* LEFT SIDE */
+.project-main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* RIGHT SIDE */
+.project-side {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* ACTIVITY */
+.activity {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.activity-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+/* ===== TABLET ===== */
+@media (min-width: 768px) {
+
+    .project-layout {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .project-main {
+        flex: 2;
+    }
+
+    .project-side {
+        flex: 1;
+    }
+}
+
+/* ===== DESKTOP ===== */
+@media (min-width: 1024px) {
+
+    .project-layout {
+        gap: 2rem;
+    }
+}
