@@ -1,0 +1,45 @@
+.modal{
+
+    display:none;
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.4);
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:1rem;
+}
+
+.modal--show{
+
+    display:flex;
+}
+
+.modal__content{
+
+    width:100%;
+
+    max-width:420px;
+
+    background:#fff;
+
+    border-radius:var(--radius-lg);
+
+    padding:2rem;
+}
+
+.modal__actions{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:1rem;
+
+    margin-top:1.5rem;
+}

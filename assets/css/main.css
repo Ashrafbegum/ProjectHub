@@ -1,0 +1,45 @@
+/* Base */
+@import "./base/reset.css";
+@import "./base/variables.css";
+@import "./base/typography.css";
+
+/* Layout */
+@import "./layout/containers.css";
+@import "./layout/app-layout.css";
+
+/* Components */
+@import "./components/navbar.css";
+@import "./components/sidebar.css";
+@import "./components/button.css";
+@import "./components/input.css";
+@import "./components/search-bar.css";
+@import "./components/dropdown.css";
+@import "./components/avatar.css";
+@import "./components/avatar-group.css";
+@import "./components/badge.css";
+@import "./components/page-header.css";
+@import "./components/breadcrumb.css";
+@import "./components/stat-card.css";
+@import "./components/project-card.css";
+@import "./components/chart-container.css";
+@import "./components/progress.css";
+@import "./components/table.css";
+@import "./components/pagination.css";
+@import "./components/modal.css";
+@import "./components/toast.css";
+@import "./components/notification.css";
+@import "./components/user-menu.css";
+@import "./components/tabs.css";
+@import "./components/spinner.css";
+@import "./components/skeleton.css";
+@import "./components/empty-state.css";
+
+/* Pages */
+@import "./pages/dashboard.css";
+@import "./pages/projects.css";
+@import "./pages/project-details.css";
+@import "./pages/tasks.css";
+@import "./pages/team.css";
+@import "./pages/calendar.css";
+@import "./pages/profile.css";
+@import "./pages/settings.css";

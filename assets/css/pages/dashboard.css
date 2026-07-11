@@ -1,0 +1,102 @@
+.page{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:2rem;
+}
+
+.dashboard-stats{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:1rem;
+}
+
+.dashboard-charts{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:1.5rem;
+}
+
+.dashboard-projects{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:1rem;
+}
+
+.dashboard-tasks{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:1rem;
+}
+
+.dashboard-activity{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:1rem;
+}
+
+/* TABLET */
+@media (min-width:768px){
+
+.dashboard-stats{
+
+flex-direction:row;
+
+flex-wrap:wrap;
+
+}
+
+.dashboard-stats>*{
+
+flex:1 1 calc(50% - .5rem);
+
+}
+
+}
+
+/* DESKTOP */
+@media (min-width:1024px){
+
+.dashboard-stats>*{
+
+flex:1;
+}
+
+.dashboard-charts{
+
+display:grid;
+
+grid-template-columns:2fr 1fr;
+
+gap:1.5rem;
+}
+
+.dashboard-projects{
+
+flex-direction:row;
+
+}
+
+.dashboard-projects>.project-card{
+
+flex:1;
+}
+
+}

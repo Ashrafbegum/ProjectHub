@@ -1,0 +1,38 @@
+.dropdown{
+
+    display:flex;
+    flex-direction:column;
+    gap:.5rem;
+
+    width:100%;
+}
+
+.dropdown__label{
+
+    font-size:.9rem;
+    font-weight:500;
+}
+
+.dropdown__select{
+
+    width:100%;
+
+    padding:.8rem 1rem;
+
+    border:1px solid #d1d5db;
+
+    border-radius:var(--radius-md);
+
+    background:#fff;
+
+    outline:none;
+
+    cursor:pointer;
+
+    transition:border-color .2s;
+}
+
+.dropdown__select:focus{
+
+    border-color:var(--primary);
+}

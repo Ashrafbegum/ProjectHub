@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Team | ProjectHub</title>
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+
+    <div class="navbar__left">
+        <div class="navbar__logo">ProjectHub</div>
+    </div>
+
+    <nav class="navbar__center">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="projects.html">Projects</a>
+        <a href="tasks.html">Tasks</a>
+        <a href="team.html">Team</a>
+    </nav>
+
+    <div class="navbar__right">
+        <button class="btn btn-primary">Invite Member</button>
+    </div>
+
+</header>
+
+<div class="app-layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="sidebar__logo">ProjectHub</div>
+
+        <a class="sidebar__link" href="dashboard.html">Dashboard</a>
+        <a class="sidebar__link" href="projects.html">Projects</a>
+        <a class="sidebar__link" href="tasks.html">Tasks</a>
+        <a class="sidebar__link sidebar__link--active" href="team.html">Team</a>
+        <a class="sidebar__link" href="settings.html">Settings</a>
+
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main-content">
+
+        <section class="page">
+
+            <!-- PAGE HEADER -->
+            <section class="page-header">
+
+                <div>
+                    <h1 class="page-header__title">Team</h1>
+                    <p class="page-header__subtitle">
+                        Manage your project collaborators.
+                    </p>
+                </div>
+
+                <div class="page-header__actions">
+                    <button class="btn btn-primary">Invite Member</button>
+                </div>
+
+            </section>
+
+            <!-- TEAM STATS -->
+            <section class="team-stats">
+
+                <div class="stat-card">
+                    <div class="stat-card__title">Total Members</div>
+                    <div class="stat-card__value">12</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-card__title">Active Now</div>
+                    <div class="stat-card__value">5</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-card__title">Admins</div>
+                    <div class="stat-card__value">2</div>
+                </div>
+
+            </section>
+
+            <!-- FILTER BAR -->
+            <section class="filter-bar">
+
+                <input class="input" type="search" placeholder="Search members...">
+
+                <div class="filter-controls">
+
+                    <select class="dropdown__select">
+                        <option>Role</option>
+                        <option>Admin</option>
+                        <option>Developer</option>
+                        <option>Designer</option>
+                    </select>
+
+                    <button class="btn btn-outline">Filter</button>
+
+                </div>
+
+            </section>
+
+            <!-- TEAM TABLE -->
+            <section class="table-wrapper">
+
+                <table class="table">
+
+                    <thead>
+                        <tr>
+                            <th>Member</th>
+                            <th>Role</th>
+                            <th>Status</th>
+                            <th>Projects</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>
+                                <div class="member">
+                                    <div class="avatar">AJ</div>
+                                    <span>Alex Johnson</span>
+                                </div>
+                            </td>
+                            <td>Admin</td>
+                            <td><span class="badge badge-success">Active</span></td>
+                            <td>4</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="member">
+                                    <div class="avatar">SC</div>
+                                    <span>Sarah Chen</span>
+                                </div>
+                            </td>
+                            <td>Developer</td>
+                            <td><span class="badge badge-warning">Away</span></td>
+                            <td>3</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="member">
+                                    <div class="avatar">MB</div>
+                                    <span>Michael Brown</span>
+                                </div>
+                            </td>
+                            <td>Designer</td>
+                            <td><span class="badge badge-success">Active</span></td>
+                            <td>5</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </section>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+
+</html>

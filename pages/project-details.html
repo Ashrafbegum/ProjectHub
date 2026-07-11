@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Project Details | ProjectHub</title>
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+    
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+
+    <div class="navbar__left">
+        <div class="navbar__logo">ProjectHub</div>
+    </div>
+
+    <nav class="navbar__center">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="projects.html">Projects</a>
+        <a href="tasks.html">Tasks</a>
+        <a href="team.html">Team</a>
+    </nav>
+
+    <div class="navbar__right">
+        <button class="btn btn-primary">Edit Project</button>
+    </div>
+
+</header>
+
+<div class="app-layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="sidebar__logo">ProjectHub</div>
+
+        <a class="sidebar__link" href="dashboard.html">Dashboard</a>
+        <a class="sidebar__link sidebar__link--active" href="projects.html">Projects</a>
+        <a class="sidebar__link" href="tasks.html">Tasks</a>
+        <a class="sidebar__link" href="team.html">Team</a>
+        <a class="sidebar__link" href="settings.html">Settings</a>
+
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main-content">
+
+        <section class="page project-layout">
+
+            <!-- LEFT PANEL -->
+            <section class="project-main">
+
+                <!-- HEADER -->
+                <section class="page-header">
+
+                    <div>
+                        <h1 class="page-header__title">ProjectHub</h1>
+                        <p class="page-header__subtitle">
+                            MERN Stack Project Management System
+                        </p>
+                    </div>
+
+                </section>
+
+                <!-- PROGRESS -->
+                <section class="chart-card">
+
+                    <h3>Progress</h3>
+
+                    <div class="progress">
+                        <div class="progress__bar" style="width: 70%"></div>
+                    </div>
+
+                </section>
+
+                <!-- TASK LIST -->
+                <section class="table-wrapper">
+
+                    <table class="table">
+
+                        <thead>
+                            <tr>
+                                <th>Task</th>
+                                <th>Status</th>
+                                <th>Owner</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>Setup Backend</td>
+                                <td><span class="badge badge-success">Done</span></td>
+                                <td>Alex Johnson</td>
+                            </tr>
+
+                            <tr>
+                                <td>Build UI Components</td>
+                                <td><span class="badge badge-warning">In Progress</span></td>
+                                <td>Sarah Chen</td>
+                            </tr>
+
+                            <tr>
+                                <td>Connect API</td>
+                                <td><span class="badge badge-danger">Pending</span></td>
+                                <td>Michael Brown</td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </section>
+
+                <!-- ACTIVITY -->
+                <section class="activity">
+
+                    <div class="activity-item">
+                        <div class="avatar">AJ</div>
+                        <div>
+                            <strong>Alex</strong> completed backend setup
+                        </div>
+                    </div>
+
+                    <div class="activity-item">
+                        <div class="avatar">SC</div>
+                        <div>
+                            <strong>Sarah</strong> updated UI components
+                        </div>
+                    </div>
+
+                </section>
+
+            </section>
+
+            <!-- RIGHT PANEL -->
+            <aside class="project-side">
+
+                <!-- STATUS CARD -->
+                <div class="stat-card">
+                    <div class="stat-card__title">Status</div>
+                    <div class="stat-card__value">Active</div>
+                </div>
+
+                <!-- MEMBERS -->
+                <div class="chart-card">
+
+                    <h3>Team</h3>
+
+                    <div class="member">
+                        <div class="avatar">AJ</div>
+                        <span>Alex Johnson</span>
+                    </div>
+
+                    <div class="member">
+                        <div class="avatar">SC</div>
+                        <span>Sarah Chen</span>
+                    </div>
+
+                    <div class="member">
+                        <div class="avatar">MB</div>
+                        <span>Michael Brown</span>
+                    </div>
+
+                </div>
+
+                <!-- META -->
+                <div class="chart-card">
+
+                    <h3>Details</h3>
+
+                    <p><strong>Start:</strong> Jan 10</p>
+                    <p><strong>Deadline:</strong> Feb 20</p>
+                    <p><strong>Priority:</strong> High</p>
+
+                </div>
+
+            </aside>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* FILTER BAR */
+.filter-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.filter-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* TABLE */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+/* PAGINATION */
+.pagination {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+/* ===== TABLET ===== */
+@media (min-width: 768px) {
+
+    .filter-bar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .filter-controls {
+        flex-direction: row;
+    }
+}
+
+/* ===== DESKTOP ===== */
+@media (min-width: 1024px) {
+
+    .table-wrapper {
+        overflow-x: visible;
+    }
+}

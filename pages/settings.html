@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Settings | ProjectHub</title>
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+
+    <div class="navbar__left">
+        <div class="navbar__logo">ProjectHub</div>
+    </div>
+
+    <nav class="navbar__center">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="projects.html">Projects</a>
+        <a href="tasks.html">Tasks</a>
+        <a href="team.html">Team</a>
+    </nav>
+
+    <div class="navbar__right">
+        <button class="btn btn-primary">Save Changes</button>
+    </div>
+
+</header>
+
+<div class="app-layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="sidebar__logo">ProjectHub</div>
+
+        <a class="sidebar__link" href="dashboard.html">Dashboard</a>
+        <a class="sidebar__link" href="projects.html">Projects</a>
+        <a class="sidebar__link" href="tasks.html">Tasks</a>
+        <a class="sidebar__link" href="team.html">Team</a>
+        <a class="sidebar__link sidebar__link--active" href="settings.html">Settings</a>
+
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main-content">
+
+        <section class="page settings-layout">
+
+            <!-- HEADER -->
+            <section class="page-header">
+
+                <div>
+                    <h1 class="page-header__title">Settings</h1>
+                    <p class="page-header__subtitle">
+                        Manage your account and preferences.
+                    </p>
+                </div>
+
+            </section>
+
+            <!-- SETTINGS GRID -->
+            <div class="settings-container">
+
+                <!-- PROFILE SETTINGS -->
+                <section class="settings-card">
+
+                    <h3>Profile</h3>
+
+                    <label>Name</label>
+                    <input class="input" type="text" value="Alex Johnson">
+
+                    <label>Email</label>
+                    <input class="input" type="email" value="alex@email.com">
+
+                    <label>Role</label>
+                    <select class="dropdown__select">
+                        <option>Admin</option>
+                        <option>Developer</option>
+                        <option>Designer</option>
+                    </select>
+
+                </section>
+
+                <!-- PASSWORD -->
+                <section class="settings-card">
+
+                    <h3>Password</h3>
+
+                    <label>Current Password</label>
+                    <input class="input" type="password">
+
+                    <label>New Password</label>
+                    <input class="input" type="password">
+
+                    <label>Confirm Password</label>
+                    <input class="input" type="password">
+
+                </section>
+
+                <!-- PREFERENCES -->
+                <section class="settings-card">
+
+                    <h3>Preferences</h3>
+
+                    <div class="setting-item">
+                        <span>Email Notifications</span>
+                        <input type="checkbox">
+                    </div>
+
+                    <div class="setting-item">
+                        <span>Dark Mode</span>
+                        <input type="checkbox">
+                    </div>
+
+                    <div class="setting-item">
+                        <span>Auto Assign Tasks</span>
+                        <input type="checkbox">
+                    </div>
+
+                </section>
+
+                <!-- ACCOUNT -->
+                <section class="settings-card danger">
+
+                    <h3>Account</h3>
+
+                    <p>Delete your account permanently.</p>
+
+                    <button class="btn btn-danger">Delete Account</button>
+
+                </section>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+
+</html>

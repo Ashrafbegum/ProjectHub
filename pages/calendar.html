@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calendar | ProjectHub</title>
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+
+    <div class="navbar__left">
+        <div class="navbar__logo">ProjectHub</div>
+    </div>
+
+    <nav class="navbar__center">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="projects.html">Projects</a>
+        <a href="tasks.html">Tasks</a>
+        <a href="team.html">Team</a>
+    </nav>
+
+    <div class="navbar__right">
+        <button class="btn btn-primary">New Event</button>
+    </div>
+
+</header>
+
+<div class="app-layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="sidebar__logo">ProjectHub</div>
+
+        <a class="sidebar__link" href="dashboard.html">Dashboard</a>
+        <a class="sidebar__link" href="projects.html">Projects</a>
+        <a class="sidebar__link" href="tasks.html">Tasks</a>
+        <a class="sidebar__link" href="team.html">Team</a>
+        <a class="sidebar__link sidebar__link--active" href="calendar.html">Calendar</a>
+
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main-content">
+
+        <section class="page calendar-layout">
+
+            <!-- HEADER -->
+            <section class="page-header">
+
+                <div>
+                    <h1 class="page-header__title">Calendar</h1>
+                    <p class="page-header__subtitle">
+                        Plan and schedule your project timeline.
+                    </p>
+                </div>
+
+                <div class="page-header__actions">
+                    <button class="btn btn-primary">Add Event</button>
+                </div>
+
+            </section>
+
+            <!-- CALENDAR + SIDEBAR -->
+            <div class="calendar-container">
+
+                <!-- CALENDAR GRID -->
+                <section class="calendar">
+
+                    <!-- WEEK DAYS -->
+                    <div class="calendar__header">
+                        <div>Mon</div>
+                        <div>Tue</div>
+                        <div>Wed</div>
+                        <div>Thu</div>
+                        <div>Fri</div>
+                        <div>Sat</div>
+                        <div>Sun</div>
+                    </div>
+
+                    <!-- DAYS GRID -->
+                    <div class="calendar__grid">
+
+                        <div class="calendar__day">1</div>
+                        <div class="calendar__day">2</div>
+                        <div class="calendar__day">3</div>
+
+                        <div class="calendar__day calendar__event">
+                            4
+                            <span>Meeting</span>
+                        </div>
+
+                        <div class="calendar__day">5</div>
+                        <div class="calendar__day">6</div>
+                        <div class="calendar__day">7</div>
+
+                        <div class="calendar__day">8</div>
+                        <div class="calendar__day">9</div>
+
+                        <div class="calendar__day calendar__event">
+                            10
+                            <span>Review</span>
+                        </div>
+
+                        <div class="calendar__day">11</div>
+                        <div class="calendar__day">12</div>
+                        <div class="calendar__day">13</div>
+                        <div class="calendar__day">14</div>
+
+                    </div>
+
+                </section>
+
+                <!-- UPCOMING EVENTS -->
+                <aside class="calendar-side">
+
+                    <h3>Upcoming</h3>
+
+                    <div class="event-card">
+                        <strong>Team Meeting</strong>
+                        <p>April 4 • 10:00 AM</p>
+                    </div>
+
+                    <div class="event-card">
+                        <strong>Project Review</strong>
+                        <p>April 10 • 2:00 PM</p>
+                    </div>
+
+                    <div class="event-card">
+                        <strong>Deadline</strong>
+                        <p>April 15 • 11:59 PM</p>
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+
+</html>
