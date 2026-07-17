@@ -22,3 +22,13 @@ export const tasks = [
     owner: "Alex",
   },
 ];
+
+export const users = [
+  { name: "Alex Johnson", role: "Admin" },
+  { name: "Sarah Chen", role: "Developer" },
+];
+
+export const events = [
+  { title: "Meeting", date: 4 },
+  { title: "Review", date: 10 },
+];
