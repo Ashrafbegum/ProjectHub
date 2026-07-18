@@ -26,6 +26,17 @@
     min-width: 0; /*Important for felx items; It allows the flex item to shrink to fit the available space beside the sidebar.*/
 }
 
+/* Page Container */
+
+.page {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 1.5rem;
+}
+
 /* TABLET */
 @media (min-width:768px){
 
