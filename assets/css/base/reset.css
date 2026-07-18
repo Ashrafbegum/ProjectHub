@@ -6,6 +6,8 @@
 }
 
 html, body {
+  height: 100%;
+  overflow: hidden; /* prevents body from scrolling  */
   font-family: system-ui, Arial, sans-serif;
   background: var(--bg);
   color: var(--text);

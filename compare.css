@@ -4,10 +4,16 @@
 
 .app-layout {
     display: flex;
-    height: calc(100vh-var(--navbar-height));
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* Navbar occupies top */
+
+.main-wrapper {
+    display: flex;
+    flex: 1;
+}
 
 /* Sidebar styles live in sidebar.css */
 
@@ -21,9 +27,20 @@
 
     background: var(--bg);
 
-    overflow-y: auto; /* Show a vertical scrollbar only when needed. */
+    overflow-x: hidden;
 
-    min-width: 0; /*Important for felx items; It allows the flex item to shrink to fit the available space beside the sidebar.*/
+    min-width: 0;
+}
+
+/* Page Container */
+
+.page {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 1.5rem;
 }
 
 /* TABLET */
