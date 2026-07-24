@@ -1,3 +1,9 @@
+.projects__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
 .project-card{
 
     display:flex;

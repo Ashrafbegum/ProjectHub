@@ -7,7 +7,7 @@
     gap:2rem;
 }
 
-.dashboard-stats{
+.stats{
 
     display:flex;
 
@@ -16,7 +16,7 @@
     gap:1rem;
 }
 
-.dashboard-charts{
+.charts{
 
     display:flex;
 
@@ -25,7 +25,7 @@
     gap:1.5rem;
 }
 
-.dashboard-projects{
+.projects{
 
     display:flex;
 
@@ -34,28 +34,30 @@
     gap:1rem;
 }
 
-.dashboard-tasks{
+ .tasks{
 
     display:flex;
 
     flex-direction:column;
 
     gap:1rem;
-}
+} 
 
-.dashboard-activity{
+.table-wrapper{
 
-    display:flex;
+    overflow-x:auto;
 
-    flex-direction:column;
+    background:var(--card);
 
-    gap:1rem;
+    border-radius:var(--radius-lg);
+
+    box-shadow:var(--shadow-sm);
 }
 
 /* TABLET */
 @media (min-width:768px){
 
-.dashboard-stats{
+.stats{
 
 flex-direction:row;
 
@@ -63,7 +65,7 @@ flex-wrap:wrap;
 
 }
 
-.dashboard-stats>*{
+.stats>*{
 
 flex:1 1 calc(50% - .5rem);
 
@@ -74,12 +76,12 @@ flex:1 1 calc(50% - .5rem);
 /* DESKTOP */
 @media (min-width:1024px){
 
-.dashboard-stats>*{
+.stats>*{
 
 flex:1;
 }
 
-.dashboard-charts{
+.charts{
 
 display:grid;
 
@@ -88,15 +90,16 @@ grid-template-columns:2fr 1fr;
 gap:1.5rem;
 }
 
-.dashboard-projects{
+.projects-list{
 
 flex-direction:row;
 
 }
 
-.dashboard-projects>.project-card{
+.projects__list>.project-card{
 
 flex:1;
 }
 
 }
+
